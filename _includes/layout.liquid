@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/public/assets/css/bundle.css">
+  <title>{{ title |  default: "Josh's Place" }}</title>
+</head>
+<body>
+  <header>
+    <h1>{{ title | default: "Josh's Place" }}</h1>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
