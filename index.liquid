@@ -1,6 +1,13 @@
 ---
 layout: layout.liquid
 ---
-{% for post in collections.post %}
-<h2><a href="{{ post.url | url }}"> {{ post.data.title }}</a></h2>
-{% endfor %}
+<p>
+    Thoughts, pictures, and ramblings by me!
+</p>
+
+<h4>Blog</h4>
+<ul>
+  {% for post in collections.post %}
+    <li><a href="{{ post.url | url }}"> {{ post.data.title }}</a></li>
+  {% endfor %}
+</ul>
